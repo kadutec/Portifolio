@@ -2,29 +2,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Kadu Nogueira</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/sobre">Sobre</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/projetos">Projetos</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className="navbar">
+            <div className="container">
+                {/* Logo */}
+                <h1 id="logo">
+                    <a href="https://github.com/CommunityPro/portfolio-html">
+                        <img src="./assets/logo.png" alt="Your Logo" />
+                    </a>
+                </h1>
+                {/* Navbar links */}
+                <ul className="nav-menu">
+                    <li><a className="nav-link" href="#projects">PROJECTS</a></li>
+                    <li><a className="nav-link" href="#">CONTACT</a></li>
+                    <li><a className="nav-link" href="#">BLOG</a></li>
+                    <li>
+                        <a className="nav-link btn btn-primary" href="https://github.com/CommunityPro/portfolio-html">
+                            RESUME <i className="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+
+                    {/* Toggle switch */}
+                    <div className="theme-switch">
+                        <input type="checkbox" id="switch" />
+                        <label className="toggle-icons" htmlFor="switch">
+                            <img className="moon" src="assets/moon.svg" alt="moon" />
+                            <img className="sun" src="assets/sun.svg" alt="sun" />
+                        </label>
+                    </div>
+                    {/* Hamburger menu */}
+                </ul>
+                <div className="hamburger">
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
