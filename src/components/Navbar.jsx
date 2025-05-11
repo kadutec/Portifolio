@@ -13,9 +13,9 @@ const Navbar = () => {
                 </h1>
                 {/* Navbar links */}
                 <ul className="nav-menu">
-                    <li><a className="nav-link" href="#projects">PROJECTS</a></li>
+                    <li><a className="nav-link" href="/projects">PROJECTS</a></li>
                     <li><a className="nav-link" href="#">CONTACT</a></li>
-                    <li><a className="nav-link" href="#">BLOG</a></li>
+                    <li><a className="nav-link" href="/Sobre">ABOUT ME</a></li>
                     <li>
                         <a className="nav-link btn btn-primary" href="https://github.com/CommunityPro/portfolio-html">
                             RESUME <i className="fas fa-arrow-right"></i>
