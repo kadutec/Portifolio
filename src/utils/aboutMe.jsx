@@ -2,7 +2,7 @@ export async function perguntarKadu(pergunta) {
   const resposta = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: {
-      "Authorization": "Bearer censurado por questoes de... é minha chave api né?!",
+      "Authorization": "censurado por questoes de... é minha chave api né?!",
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
